@@ -111,6 +111,9 @@ img.round{
     .reverse{
         flex-direction: column-reverse;
     }
+    .column{
+        flex-direction: column;
+    }
     .logos{
         grid-template-columns: 1fr ;
         gap: 3rem;
