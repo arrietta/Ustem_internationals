@@ -86,8 +86,15 @@ img.round{
 .logotype{
     height: 4rem;
 }
-.logos{
+#Organizers{
     margin: 10rem auto ;
+}
+.space-y{
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+}
+.logos{
+   
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -105,9 +112,6 @@ img.round{
         flex-direction: column-reverse;
     }
     .logos{
-        margin: 10rem auto ;
-        display: grid;
-        justify-items: center;
         grid-template-columns: 1fr ;
         gap: 3rem;
     }
