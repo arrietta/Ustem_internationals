@@ -13,9 +13,13 @@ body ,html{
 }
 header{
     padding-top: 1.25rem ;
+    width: 100%;
+}
+main{
+    width: 100%;
 }
 section{
-    /* padding: 1.25rem 5rem; */
+    position: relative;
     width: 100%;
 }
 .nav-item{
@@ -75,11 +79,19 @@ section{
     font-weight: bold;
 }
 img.round{
-    margin: 3rem 1rem ;
+    margin: 3rem auto ;
     border-radius: 50px;
     width: 100%;
 }
-
+.logotype{
+    height: 4rem;
+}
+.logos{
+    margin: 10rem auto ;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 @media (max-width: 992px){
     .big{
         font-size: 2rem;
@@ -91,6 +103,13 @@ img.round{
     }
     .reverse{
         flex-direction: column-reverse;
+    }
+    .logos{
+        margin: 10rem auto ;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr ;
+        gap: 3rem;
     }
     
 }
