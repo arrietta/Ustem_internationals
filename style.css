@@ -12,10 +12,10 @@ body ,html{
     color: rgb(0, 0, 0);
 }
 header{
-    padding: 1.25rem 5rem;
+    padding-top: 1.25rem ;
 }
 section{
-    padding: 1.25rem 5rem;
+    /* padding: 1.25rem 5rem; */
     width: 100%;
 }
 .nav-item{
@@ -78,4 +78,19 @@ img.round{
     margin: 3rem 1rem ;
     border-radius: 50px;
     width: 100%;
+}
+
+@media (max-width: 992px){
+    .big{
+        font-size: 2rem;
+        margin: 0rem 1rem ;
+    }
+    .small{
+        font-size: 1rem;
+        margin: 1.5rem 1rem ;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    
 }
