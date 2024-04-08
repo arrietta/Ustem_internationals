@@ -1,0 +1,81 @@
+body ,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+*{
+    font-family: "Poppins",ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    
+    line-height: 100%; 
+    color: rgb(0, 0, 0);
+}
+header{
+    padding: 1.25rem 5rem;
+}
+section{
+    padding: 1.25rem 5rem;
+    width: 100%;
+}
+.nav-item{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+.my_btn {
+    width: 10rem;
+    font-size: 16px;
+    font-weight: 600;
+    
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    color: #fff;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.my_btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.my_btn:focus {
+    outline: none;
+}
+
+.my_btn.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    
+}
+.my_btn.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    
+}
+
+.small{
+    font-size: 1.15rem;
+    margin: 3rem 1rem ;
+}
+.big{
+    font-size: 3.75rem;
+    margin: 0rem 1rem ;
+    font-weight: bold;
+}
+img.round{
+    margin: 3rem 1rem ;
+    border-radius: 50px;
+    width: 100%;
+}
