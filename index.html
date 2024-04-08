@@ -111,6 +111,87 @@
                 
             </div>
         </section>
+        <section>
+            <div class="d-flex column">
+                <div class="col-lg-8 m-2">
+                    <div class="h4 text-secondary">Прошлая олимпиада 2023 года</div>
+                    <div class="display-5 bold">Shell NXplorers Bio Olympiad</div>
+                    
+
+                </div>
+                <div class="col-lg-4 m-2 text-secondary fs-5">
+                    
+                        По приглашению корпоративного фонда "Caravan of Knowledge", 4 ноября 2023 года на базе AIFC EXPO впервые нами была протестирована модель задач CABO в рамках фестиваля Shell Nxplorers: больше 30 учеников 8-11 классов из Астаны и Павлодара поучаствовали, а призеры получили ценные призы от Shell.
+                    
+                </div>
+
+            </div>
+            <div class="album py-3">
+                <img src="photo-715.jpg" alt="">
+                <img src="photo-174.jpg" alt="">
+                <img src="image.jpg" alt="">
+
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
+
+    <footer>
+        <div>daulet@ustemrobotics.kz</div>
+        <div>+7 707 222 17 47</div>
+
+    </footer>
+    <script>
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+        
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+        
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
 </body>
 </html>
