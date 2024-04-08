@@ -108,15 +108,16 @@ img.round{
     justify-items: center;
     grid-template-columns: 1fr 1fr ;
     gap: 1rem;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 300px;
 }
 .album img{
     border-radius: 15px;
     object-fit: cover;
 }
 .album img{
+    
     width: 100%;
-    height: 250px;
+    height: 300px;
     border-radius: 15px;
 }
 .album img:first-child{
@@ -124,7 +125,7 @@ img.round{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    height: 500px;
+    height: 616px;
 }
 
 .accordion .accordion-item {

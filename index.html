@@ -127,11 +127,24 @@
 
             </div>
             <div class="album py-3">
-                <img src="photo-715.jpg" alt="">
                 <img src="photo-174.jpg" alt="">
                 <img src="image.jpg" alt="">
+                <img src="photo-715.jpg" alt="">
+                
+                
 
             </div>
+        </section>
+        <section>
+            <form id="myForm">
+                <label for="field1">Поле 1:</label><br>
+                <input type="text" id="field1" name="field1"><br>
+                <label for="field2">Поле 2:</label><br>
+                <input type="text" id="field2" name="field2"><br>
+                <label for="field3">Поле 3:</label><br>
+                <input type="text" id="field3" name="field3"><br><br>
+                <input type="submit" value="Отправить" onclick="submitForm(event)">
+              </form>
         </section>
 
         <section class="faq">
@@ -192,6 +205,30 @@
         }
 
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        function submitForm(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+
+            var form = document.getElementById('myForm');
+            var formData = new FormData(form);
+            
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://script.google.com/macros/s/AKfycbz516Tvo_H33WC0T3VIllgsnu5TpeVq8Eqlb6sq5TTouNKnLijBniYAsU6WXHY9TN7Rmg/exec', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                console.log('Данные успешно отправлены');
+                // Можно добавить здесь код для обработки успешной отправки данных, если нужно
+                } else {
+                console.error('Произошла ошибка при отправке данных:', xhr.statusText);
+                // Можно добавить здесь код для обработки ошибки при отправке данных, если нужно
+                }
+            };
+            xhr.onerror = function() {
+                console.error('Произошла ошибка соединения');
+                // Можно добавить здесь код для обработки ошибки соединения, если нужно
+            };
+            xhr.send(formData);
+        }
     </script>
 </body>
 </html>
